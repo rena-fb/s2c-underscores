@@ -1,0 +1,244 @@
+/*
+*Variables,colors, fonts, written in SCSS.
+*/
+/* 
+ * Mixins, written in SCSS.
+ */
+/* 
+ * Main styles, written in SCSS.
+ */
+/*
+*Variables,colors, fonts, written in SCSS.
+*/
+/* Uncomment these lines to see the position of each html element
+*{ outline: 1px solid rgba(110,51,255,0.4);}
+*/
+.light-pink-color {
+  color: #f27597; }
+
+.light-blue-top-line {
+  border-top: 2px solid #34bac9; }
+
+.ligh-blue-color {
+  color: #34bac9; }
+
+.light-pink-bg {
+  color: #f27597; }
+
+.hyperlink-pink, .hyperlink-pink:hover {
+  color: #f27597; }
+
+.light-black-color {
+  color: #505050; }
+
+.bg-light-dark {
+  background: #2F2F2F; }
+
+.bg-light-blue {
+  background: #34bac9; }
+
+/* 
+ * Header styles, written in SCSS.
+ */
+/*
+*Variables,colors, fonts, written in SCSS.
+*/
+.container-fluid.headerwidth {
+  padding: 0; }
+
+/*** updates ***/
+/** Header **/
+.wrapper-nav-contact {
+  background: #2F2F2F; }
+  .wrapper-nav-contact .btn-lang {
+    padding: .1em 3em; }
+  .wrapper-nav-contact .social-m-top {
+    padding: 1em 0; }
+  .wrapper-nav-contact .social-m-top .social-link a {
+    text-indent: 999px;
+    display: inline-block;
+    vertical-align: middle;
+    width: .5em;
+    height: .5em;
+    padding: 1.1em;
+    border-radius: 0.25em;
+    background-size: 1.375em 1.375em; }
+  .wrapper-nav-contact .icon-link--facebook a {
+    background: #3b5998 url("../library/svg/facebook.svg") center no-repeat; }
+  .wrapper-nav-contact .icon-link--twitter a {
+    background: #51abf1 url("../library/svg/twitter.svg") center no-repeat; }
+  .wrapper-nav-contact .icon-link--youtube a {
+    background: #cc181e url("../library/svg/youtube.svg") center no-repeat; }
+
+.wrapper-logo-search-bar {
+  background: #fff; }
+  .wrapper-logo-search-bar .site-logo a {
+    background-image: url("../library/img/safe2choose-logo.png");
+    background-repeat: no-repeat;
+    background-size: 263px 47px;
+    display: inline-block;
+    width: 263px;
+    height: 47px; }
+  .wrapper-logo-search-bar .site-description {
+    max-width: 11em !important; }
+
+.wrapper-menu-navigation {
+  background: #34bac9; }
+  .wrapper-menu-navigation .navbar-toggler {
+    background-color: #f27597; }
+  .wrapper-menu-navigation .navbar-nav .nav-item a:hover {
+    background-color: #ee4674; }
+  .wrapper-menu-navigation .navbar-nav .nav-item a:active {
+    background-color: #f27597; }
+  .wrapper-menu-navigation .navbar-nav .nav-item a:focus {
+    background-color: #ee4674; }
+  .wrapper-menu-navigation .sub-menu {
+    top: 60% !important;
+    background-color: #ee4674;
+    padding-left: 2em;
+    padding-top: 0; }
+    .wrapper-menu-navigation .sub-menu ul {
+      background-color: #f27597;
+      padding-left: 2px; }
+    .wrapper-menu-navigation .sub-menu ul li {
+      list-style-type: none; }
+
+/*** Media Queries ***/
+@media (max-width: 992px) {
+  .nav-bar-pink {
+    background-color: #f27597; }
+  .navbar-nav .nav-item {
+    border-bottom: 1px solid #fff; }
+  .wrapper-logo-search-bar {
+    background: #fff; }
+    .wrapper-logo-search-bar .site-logo, .wrapper-logo-search-bar .site-description, .wrapper-logo-search-bar .search-bar {
+      display: block; }
+    .wrapper-logo-search-bar .site-logo a {
+      background-image: url("../library/img/safe2choose-logo@2x.png"); }
+    .wrapper-logo-search-bar .site-description {
+      max-width: 11em !important;
+      display: block; } }
+
+/* 
+ * Homepage styles, written in SCSS.
+ */
+/*
+*Variables,colors, fonts, written in SCSS.
+*/
+.wrapper-content-full-page {
+  background: #fcf6e3 url("../library/img/bg.png") repeat;
+  padding-top: 0.937em;
+  padding-bottom: 0.937em; }
+  .wrapper-content-full-page .hero_image {
+    width: 50%;
+    display: inline-block;
+    float: right; }
+  .wrapper-content-full-page .question-buttons {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 3em; }
+    .wrapper-content-full-page .question-buttons h3 {
+      font-weight: bolder; }
+    .wrapper-content-full-page .question-buttons a button {
+      background-color: #f27597;
+      border-radius: 0.2em;
+      -moz-border-radius: 0.2em;
+      -webkit-border-radius: 0.2em;
+      line-height: initial;
+      padding: 0.5em;
+      font-weight: bold;
+      font-size: large;
+      margin: 1.5em auto 0;
+      min-width: 328px;
+      -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+      -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+      box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75); }
+  .wrapper-content-full-page .main-sidebar .pregnancy-calculator {
+    margin-left: 3em; }
+
+/*** Media Queries ***/
+@media (max-width: 992px) {
+  .wrapper-content-full-page .hero_image {
+    width: 100%; }
+  .wrapper-content-full-page .question-buttons {
+    width: 100%; }
+    .wrapper-content-full-page .question-buttons a button {
+      margin: 1em 10%;
+      width: 80%;
+      font-size: 14px;
+      min-width: initial; }
+  .wrapper-content-full-page .main-sidebar .pregnancy-calculator {
+    margin-left: 0; } }
+
+/* 
+ * Footer styles, written in SCSS.
+ */
+/*
+*Variables,colors, fonts, written in SCSS.
+*/
+.main-footer .site-logo a {
+  background-image: url("../library/img/safe2choose-logo.png");
+  background-repeat: no-repeat;
+  background-size: 263px 47px;
+  display: inline-block;
+  width: 263px;
+  height: 47px; }
+
+.main-footer .social-m-footer .social-link a {
+  text-indent: 999px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 2em;
+  border-radius: 0.25em;
+  background-size: 1.375em 1.375em; }
+
+.main-footer .icon-link--facebook a {
+  background: #3b5998 url("../library/svg/facebook.svg") center no-repeat; }
+
+.main-footer .icon-link--twitter a {
+  background: #51abf1 url("../library/svg/twitter.svg") center no-repeat; }
+
+.main-footer .icon-link--youtube a {
+  background: #cc181e url("../library/svg/youtube.svg") center no-repeat; }
+
+.main-footer .footer-links ul li a {
+  color: #fff;
+  font-size: .8em;
+  padding: 1em 1.5em; }
+
+.main-footer .copyright {
+  font-size: .6em;
+  color: #fff; }
+
+/* 
+ * Menu styles, written in SCSS.
+ */
+/*
+*Variables,colors, fonts, written in SCSS.
+*/
+/* 
+ * Find my method breakpoints styles Extra Small Devices, Phones, Custom, iPhone Retina , written in SCSS.
+ */
+/*
+*Variables,colors, fonts, written in SCSS.
+*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* 
+ * Safe2choose breakpoints styles for SSmall Devices, Tablets, written in SCSS.
+ */
+/*
+*Variables,colors, fonts, written in SCSS.
+*/
+/* 
+ * Find my method breakpoints styles for Medium Devices, Desktops and Large Devices, Wide Screens, written in SCSS.
+ */
+/*
+*Variables,colors, fonts, written in SCSS.
+*/
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+/* Safe2choose Custom Style */

@@ -1,0 +1,81 @@
+﻿/* 
+ * Homepage styles, written in SCSS.
+ */
+
+@import '_variables';
+
+
+$light-pink-bg: #f27597;
+$ligh-blue-color: #34bac9;
+
+.wrapper-content-full-page {
+    background: #fcf6e3 url("../library/img/bg.png") repeat;
+    padding-top: 0.937em;
+    padding-bottom: 0.937em;
+    .hero_image {
+        width: 50%;
+        display: inline-block;
+        float: right;
+    }
+    .question-buttons{
+        width: 50%;
+        display: inline-block;
+        text-align: center;
+        padding-top: 3em;
+        h3{
+            font-weight: bolder;
+        }
+        a button{
+            background-color: $light-pink-bg;
+            border-radius: 0.2em;
+            -moz-border-radius: 0.2em;
+            -webkit-border-radius: 0.2em;
+            line-height: initial;
+            padding: 0.5em;
+            font-weight: bold;
+            font-size: large;
+            margin: 1.5em auto 0;
+            min-width: 328px;
+            -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+            box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.75);
+        }
+    }
+    .mainContentOfPage{
+
+    }
+    .main-sidebar{
+        .pregnancy-calculator{
+            margin-left: 3em;
+        }
+    }
+}
+
+
+/*** Media Queries ***/
+@media (max-width: 992px) {
+    .wrapper-content-full-page {
+
+        .hero_image {
+            width: 100%;
+        }
+        .question-buttons{
+            width: 100%;
+            a button{
+                margin: 1em 10%;
+                width: 80%;
+                font-size: 14px;
+                min-width: initial;
+            }
+        }
+        .main-sidebar{
+            .pregnancy-calculator{
+                margin-left: 0;
+            }
+        }
+        .lastestNews{
+
+        }
+    }
+
+}

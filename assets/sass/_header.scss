@@ -1,0 +1,108 @@
+﻿/* 
+ * Header styles, written in SCSS.
+ */
+@import '_variables';
+
+.container-fluid{
+	&.headerwidth{
+		padding: 0;
+	}
+} 
+
+/*** updates ***/
+/** Header **/
+.wrapper-nav-contact {
+    background: #2F2F2F;
+    .btn-lang{
+        padding: .1em 3em;
+    }
+    .social-m-top {
+        padding: 1em 0;
+    }
+    .social-m-top .social-link a {
+        text-indent: 999px;
+        display: inline-block;
+        vertical-align: middle;
+        width: .5em;
+        height: .5em;
+        padding: 1.1em;
+        border-radius: 0.25em;
+        background-size: 1.375em 1.375em;
+    }
+    .icon-link--facebook a {
+        background: #3b5998 url("../library/svg/facebook.svg") center no-repeat;
+    }
+    .icon-link--twitter a {
+        background: #51abf1 url("../library/svg/twitter.svg") center no-repeat;
+    }
+    .icon-link--youtube a {
+        background: #cc181e url("../library/svg/youtube.svg") center no-repeat;
+    }
+}
+.wrapper-logo-search-bar{
+    background: #fff;
+    .site-logo a {
+        background-image: url("../library/img/safe2choose-logo.png");
+        background-repeat: no-repeat;
+        background-size: 263px 47px;
+        display: inline-block;
+        width: 263px;
+        height: 47px;
+    }
+    .site-description {
+        max-width: 11em !important;
+    }
+}
+
+.wrapper-menu-navigation {
+    background: #34bac9;
+    .navbar-toggler {
+        background-color: #f27597;
+    }
+    .navbar-nav .nav-item a:hover{
+        background-color: #ee4674; 
+    }
+    .navbar-nav .nav-item a:active{
+        background-color: #f27597; 
+    }
+    .navbar-nav .nav-item a:focus{
+        background-color: #ee4674;
+    }
+    .sub-menu{
+        top: 60% !important;
+        background-color: #ee4674;
+        padding-left: 2em;
+        padding-top: 0;
+        ul{
+            background-color: #f27597; 
+            padding-left: 2px;
+        }
+        ul li{
+            list-style-type: none;
+        }
+    }
+}
+
+/*** Media Queries ***/
+@media (max-width: 992px) {
+    .nav-bar-pink{
+        background-color: #f27597; 
+    }
+    .navbar-nav .nav-item{
+        border-bottom: 1px solid #fff;
+    }
+    .wrapper-logo-search-bar{
+        background: #fff;
+        .site-logo, .site-description, .search-bar {
+            display: block;
+        }
+        .site-logo a {
+            background-image: url("../library/img/safe2choose-logo@2x.png");
+        }
+        .site-description {
+            max-width: 11em !important;
+            display: block;
+        }
+    }
+
+}

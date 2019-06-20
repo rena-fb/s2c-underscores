@@ -1,0 +1,44 @@
+﻿/* 
+ * Footer styles, written in SCSS.
+ */
+
+@import '_variables';
+
+.main-footer{
+    .site-logo a {
+        background-image: url("../library/img/safe2choose-logo.png");
+        background-repeat: no-repeat;
+        background-size: 263px 47px;
+        display: inline-block;
+        width: 263px;
+        height: 47px;
+    }
+    .social-m-footer .social-link a {
+        text-indent: 999px;
+        display: inline-block;
+        vertical-align: middle;
+        width: 1.5em;
+        height: 1.5em;
+        padding: 2em;
+        border-radius: 0.25em;
+        background-size: 1.375em 1.375em;
+    }
+    .icon-link--facebook a {
+        background: #3b5998 url("../library/svg/facebook.svg") center no-repeat;
+    }
+    .icon-link--twitter a {
+        background: #51abf1 url("../library/svg/twitter.svg") center no-repeat;
+    }
+    .icon-link--youtube a {
+        background: #cc181e url("../library/svg/youtube.svg") center no-repeat;
+    }
+    .footer-links ul li a{
+        color: #fff;
+        font-size: .8em;
+        padding: 1em 1.5em;
+    }
+    .copyright{
+        font-size: .6em;
+        color: #fff;
+    }
+}
